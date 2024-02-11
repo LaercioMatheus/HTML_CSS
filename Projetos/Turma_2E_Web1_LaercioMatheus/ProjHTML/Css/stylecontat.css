@@ -1,0 +1,40 @@
+h1 {
+  margin-left: 10pt;
+  color: rgba(148, 15, 15, 0.849);
+}
+
+h2 .web {
+  margin-left: 10pt;
+  color: rgba(34, 207, 34, 0.878);
+  text-decoration: none;
+}
+
+h2 .inst {
+  margin-left: 10pt;
+  color: rgb(131, 7, 156);
+  text-decoration: none;
+}
+
+h2 .linked {
+  margin-left: 10pt;
+  color: #006097;
+  text-decoration: none;
+}
+
+h2 .twit {
+  margin-left: 10pt;
+  color: rgba(30, 80, 30, 0.878);
+  text-decoration: none;
+}
+
+h2 .teleg {
+  margin-left: 10pt;
+  color: rgb(112, 93, 204);
+  text-decoration: none;
+}
+
+h2 .disc {
+  margin-left: 10pt;
+  color: #1c4c5f;
+  text-decoration: none;
+}

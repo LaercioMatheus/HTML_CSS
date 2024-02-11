@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Mitr
+- Font Author: Copyright (c) 2015, Cadson Demak (info@cadsondemak.com)
+- Font Source: http://fonts.gstatic.com/s/mitr/v11/pxiLypw5ucZFyTsyMJj_b1o.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

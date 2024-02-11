@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="../Css/styleCadastra.css">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    
+    <!--Aqui vai ser o menu-->
+    <header>
+        <div class="menuCad ">
+            <nav>
+                <ul>  <!--Aqui é o arquivo da foto do logo-->
+                    <li><logo><img src="../../img/LogoAtual.png" class="logo" width="186px" height="50px"
+                        alt="Logo do site."></logo></li> <!--Aqui é o Logo desta página-->
+                                    
+    <!--Menu do site abaixo-->                                
+                    <li class="current"><a href="Cadastra.html">Página Inicial</a></li>
+                    <li><a href="Cadastra.html">Sobre</a></li>
+                    <li><a href="Cadastra.html">Serviços</a></li>
+                    <li><a href="Cadastra.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<hr>
+
+
+  <div class="container">
+    <div class="card">
+      <h1>Fazer Cadastro</h1>
+
+      <!--NOME-->
+      <div class="label-float">
+        <input type="text" id="nome" placeholder=" " required />
+        <label id="labelNome" for="nome">Nome</label>
+      </div>
+
+      <!--CPF-->
+      <div class="label-float">
+        <input type="text" id="cpf" placeholder=" " required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+        <label id="labelcpf" for="cpf">CPF:</label>
+      </div>
+
+      <!--EMAIL-->
+      <div class="label-float">
+        <input type="email" id="email" placeholder=" " required />
+        <label id="labelemail" for="email">E-mail:</label>
+      </div>
+
+      <!--ENDERECO-->
+      <div class="label-float">
+        <input type="endereco" id="endereço"  size="40" placeholder=" " required />
+        <label id="labelendereco" for="endereço">Endereço:</label>
+      </div>
+
+      <!--CIDADE-->
+      <div class="label-float">
+        <input type="cidade" id="cidade" size="40" placeholder=" " required />
+        <label id="labelcidade" for="cidade">Cidade:</label>
+      </div>
+
+      <!--ESTADO-->
+  <div>
+      <label><h4>Selecione o estado:</h4></label>
+      <select for="estado" id="estado">
+           <option selected>Distrito Federal - DF</option>
+           <option>Acre - AC               </option>
+           <option>Alagoas - AL            </option>
+           <option>Amapá - AP              </option>
+           <option>Amazonas - AM           </option>
+           <option>Bahia - BA              </option>
+           <option>Ceará - CE              </option>
+           <option>Distrito Federal - DF   </option>
+           <option>Espirito Santo - ES     </option>
+           <option>Goiás - GO              </option>
+           <option>Maranhão - MA           </option>
+           <option>Mato Grosso - MT        </option>
+           <option>Mato Grosso do Sul - MS </option>
+           <option>Minas Gerais - MG       </option>
+           <option>Para - PA               </option>
+           <option>Paraíba - PB            </option>
+           <option>Paraná - PR             </option>
+           <option>Pernambuco - PE         </option>
+           <option>Piauí - PI              </option>
+           <option>Rio de Janeiro - RJ     </option>
+           <option>Rio Grande do Norte - RN</option>
+           <option>Rio Grande do Sul - RS  </option>
+           <option>Rondônia - RO           </option>
+           <option>Roraima - RR            </option>
+           <option>Santa Cararina - SC     </option>
+           <option>São Paulo - SP          </option>
+           <option>Sergipe - SE            </option>
+           <option>Tocantins - TO          </option>
+      </select>
+    </label>
+  </div>
+
+       <!--USUÁRIO-->
+      <div class="label-float">
+        <input type="text" id="usuario" placeholder=" " required />
+        <label id="labelUsuario" for="usuario">Usuário</label>
+      </div>
+
+      <!--SENHA-->
+      <div class="label-float">
+        <input type="password" id="senha" placeholder=" " required />
+        <label id="labelSenha" for="senha">Senha</label>
+        <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+      </div>
+
+      <!--CONFIRMAÇÃO DE SENHA-->
+      <div class="label-float">
+        <input type="password" id="confirmSenha" placeholder=" " required />
+        <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+        <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+      </div>
+
+      <div class="justify">
+        <button onclick="">Apagar</button>
+        <button onclick="cadastrar()">Cadastrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!--Ligação com o JavaScript-->
+  <script src="../JavaScript.js/cadastro.js"></script>
+
+      <!--Faixa de direitos no final do site-->
+      <footer>
+        <p>&copy; 2023 Bilblioteca Mater. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

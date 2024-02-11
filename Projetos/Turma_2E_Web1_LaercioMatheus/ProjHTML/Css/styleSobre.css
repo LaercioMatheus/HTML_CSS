@@ -1,0 +1,109 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color:#b2b0d1;
+    background-image: url("../../img/imgFundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  title {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* Estilos básicos para o menu*/
+.container {
+  list-style-type: none; /*listagem dos botões*/
+  margin: 0; /*margem do painel*/ 
+  padding: 0; /*distância da margem esquerda*/
+  overflow: hidden; /* Evitando que a imagem de logo ultrapasse o menu */
+}  
+
+header {
+  padding: 10px; /* Adicionando algum espaço ao redor da imagem */
+  background-color: #6a8dffbb; /*cor da faixa do menu */
+}
+
+li {
+  float: left; /*lugar dos botões (esquerda ou direita)*/
+}
+
+.logo {
+  float: left; 
+  height: 50px; /* Altura desejada para o logo */
+}
+   
+  li a {
+    display: block; /*espessura do painel principal*/
+    color: rgb(4, 1, 172); /*cor da fonte dos botões*/
+    text-align: center; /*posção da fonte*/
+    font-size: 16px;
+    padding: 14px 14px; /*distânciamento dos botões*/
+    text-decoration: none; /*links sublinhados*/
+    transition: background-color 0.5s ease;
+    border-radius: 10pt;
+  }
+
+  hr {
+    color: cornflowerblue;
+    height: 2px;
+  }
+   
+  a:hover { /*efeito de sombreamento dos botões quando tocados*/
+    background-color: rgba(223, 207, 63, 0.479); /*a cor deles*/
+  }
+
+/*Essa parte remove as marcações das listas ordenadas do menu */
+  nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  h1 {
+    color:#746ddd;
+  }
+
+  h2 {
+    color: #dad7fc;
+  }
+
+  p {
+    margin-left: 10pt;
+  }
+
+  textarea {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    border: 1px solid darkgreen;
+  }
+
+  textarea.placeholder {
+    font-family: 'Georgia';
+    font-size: 16px;
+  }
+
+  a.text {
+    text-decoration: none;
+    text-transform: none;
+    color: blueviolet;
+  }
+
+/*Faixa que informa que o site tem todos os direitos reservados*/
+footer {
+  padding: 10px;
+  margin-top: 10px;
+  color:bisque;
+  background: #00395aa6;
+  text-align:center;
+  font-size: 14px;
+  border-bottom: #0f0f0f 4px solid;
+}

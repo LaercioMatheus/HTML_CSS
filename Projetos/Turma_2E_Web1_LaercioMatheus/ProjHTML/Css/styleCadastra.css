@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  background-image: url('../../img/imgFundo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /*  Permite que as divs quebrem para a próxima linha se não houver espaço suficiente */
+  justify-content: flex-start; /* Distribui as divs igualmente com algum espaço ao redor */
+}
+
+header {
+  padding: 10px; /* Adicionando algum espaço ao redor da imagem */
+  overflow: hidden; /* Evitando que a imagem de logo ultrapasse o menu */
+}
+
+.logo {
+  float: left;
+  height: 50px; /* Altura desejada para o logo */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/*posição dos botões*/
+nav li {
+  float: left; /* Alinhando o menu à direita */
+}
+
+/*stilos dos botões do menu*/
+nav a {
+  display: block;
+  color: rgb(28, 92, 177); /*cor da fonte dos borões*/
+  text-align: center; /*posição do texto*/
+  padding: 14px 16px; /*tamanho dos botões do menu*/
+  text-decoration: none;
+  border-radius: 10pt;
+  margin-right: 20pt;
+}
+
+hr {
+  color: cornflowerblue;
+  height: 2px;
+}
+
+/*imagem e botão da lupa*/
+a.lupa {
+  width: 10px;
+  height: 15px;
+  padding-left: 10pt;
+  padding-right: 20pt;
+}
+
+/*Faixa de pesquisa*/
+li input {
+  font-size: medium;
+  padding: 14px;
+  border-radius: 10pt;
+}
+
+    /*efeito de sombreamento dos botões quando tocados*/
+nav a:hover {
+  background-color: rgba(253, 241, 77, 0.925); /*a cor deles*/
+  transition: background-color 0.8s ease;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 1px #00000060;
+  width: 400px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0d009c
+}
+
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #0d009c;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #4038a0;
+}
+
+.label-float label{
+  color: #0d009c;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #4038a0
+}
+
+/*Cor do nome 'Selecione o estado'*/
+  h4 {
+    color: #0d009c;
+    font-size: 16px;
+  }
+
+  select {
+    font-size: 16px;
+    color: #0d009c;
+    font-family: cursive;
+    background-color: transparent ;
+  }
+
+button{
+  background-color: transparent;
+  border-color: #0d009c;
+  color: #0d009c;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: #0d009c;
+  color: #fff;
+}
+
+.justify{
+  display: flex;
+ /* justify-content: left;*/
+}
+
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #0d009c;
+}
+
+#msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSuccess{
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+    /*Faixa que informa que o site tem todos os direitos reservados*/
+    footer {
+      padding: 10px;
+      margin-top: 10px;
+      color:bisque;
+      background: #00395aa6;
+      text-align:center;
+      font-size: 14px;
+      border-bottom: #0f0f0f 4px solid;
+    }

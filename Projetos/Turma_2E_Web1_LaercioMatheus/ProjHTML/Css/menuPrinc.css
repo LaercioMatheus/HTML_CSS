@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../../img/imgFundo.jpg');/*MUDAR*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap; /*  Permite que as divs quebrem para a próxima linha se não houver espaço suficiente */
+ justify-content:flex-start; /* Distribui as divs igualmente com algum espaço ao redor */
+}
+
+
+header#cabecalho {
+  padding: 10px; /* Adicionando algum espaço ao redor da imagem */
+  overflow: hidden; /* Evitando que a imagem de logo ultrapasse o menu */
+  background-color: #6a8dffe7;
+}
+
+img#logo {
+  float: left; /*A imagem do logo vai ficar flutuando á esquerda*/
+  height: 50px; /* Altura desejada para o logo */
+}
+
+nav#menu ul {
+  list-style-type: none; /*ocultando as marcas da lista usada no menu*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/*posição dos botões*/
+nav li {
+  float: left; /* Alinhando o menu à direita */
+}
+
+/*estilos dos botões do menu*/
+ul li a {
+  display: block;
+  color: rgb(13, 12, 122); /*cor da fonte dos borões*/
+  font-size: 18px;
+  text-align: center; /*posição do texto*/
+  padding: 14px 16px; /*tamanho dos botões do menu*/
+  text-decoration: none;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+  /*efeito de sombreamento dos botões quando tocados*/
+nav a:hover {
+  background-color: rgba(214, 198, 57, 0.479); /*a cor deles*/
+  transition: background-color 0.8s ease;
+}
+    
+
+/*div com o input de pesquisa dentro*/
+div.div-logo {
+  position: relative;
+  width: 400px;
+}
+
+.inclui-img {
+  width: 100%;/*A tamanho da largura da barra de pesquisa dependendo do tamanho da tela*/
+  padding: 12px; /*Uma borda interna da barra*/
+  padding-left: 40px; /* O espaço do placeholder 'input' para a imagem*/
+  font-size: 18px;
+  box-sizing: border-box; /*O tamanho da barra*/
+  background-image: url('../../img/LupaPesq.png');
+  /*background-size: 20px;  O tamanho da imagem*/
+  background-position: 10px center; /*A posição da imagem dentro da barra de pesquisa*/
+  background-repeat: no-repeat; /*Estilo para a imagem não repetir*/
+  border: 1px solid #ccc; /*Borda da barra*/
+  border-radius: 5px; /*A borda no canto da barra*/
+  outline: none;
+}
+
+/*Linha de separação do menu e do conteúdo do site*/
+hr {
+  background-color: #836e6e;
+  height: 3px;
+  border: none;
+}
+
+
+/*Título do site*/
+h1 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #b2b0d1;
+  width: 100%;
+  font-size: 50px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/*Subtítulo do site*/
+h2 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 
+  Arial, sans-serif;
+  color: #aba6eb;
+  width: auto;
+  font-size: 35px;
+}
+
+h3 {
+  color: #b2b0d1;
+}
+
+/*Parte das imagens dos livros*/
+.livro {
+  background-color:rgba(161, 182, 214, 0.795);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box; /* Garante que as bordas e o preenchimento não aumentem a largura total */
+  width: 150px; /* Ajuste a largura conforme necessário */
+  margin: 5px; /* Ajuste a margem conforme necessário */
+  transition: box-shadow 0.3s ease; /* Adiciona uma transição suave na propriedade box-shadow */
+}
+  .livro:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao passar mouse sobre a área do livro */
+}
+
+.linha_A {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.linha_B {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.linha_C {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.linha_D {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.linha_E {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.livro img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.livro h3 {
+  margin: 10px 0;
+  color:#070606e7 ;
+}
+
+.livro .preco {
+  color: green;
+  font-weight: bold;
+}
+
+/*Aqui é o styles dos botões de compra*/
+button {
+  background-color: rgba(25, 104, 25, 0.637);
+  border-radius: 50pt;
+  color: bisque;
+  transition: box-shadow 0.3s ease; /* Adiciona uma transição suave na propriedade box-shadow */
+}
+  button:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao passar o mouse */
+}
+
+/*Aqui é o style da tabela*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  }
+
+  th, td {
+  border: 3px solid #b5b1f7;
+  color: #d1b6b6;
+  background-color: #113875;
+  padding: 8px;
+  text-align: left;
+}
+
+  th {
+    color: #0f0f0f;
+    background-color: #488feb;
+}
+
+/*os style do áudio*/
+audio {
+  width: 100%;
+  margin-top: 20px; /* Adiciona um espaçamento acima da tag de áudio */
+  background-color: #6d6b68de;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Estiliza os controles de áudio */
+audio::-webkit-media-controls {
+  background-color: #155c0c; /* Cor de fundo dos controles no Chrome/Safari */
+}
+
+/* Estiliza a barra de progresso do áudio */
+audio::-webkit-media-slider-thumb {
+  background-color: #113875; /* Cor do controle deslizante no Chrome/Safari */
+}
+
+/*Os styles do vídeo*/
+.podvid {
+  width: 100%;
+  padding-bottom: 5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  background-color: #7202698f;
+  width: 100%;
+  padding-bottom: 5rem;
+  color: rgba(59, 53, 53, 0.411);
+  display: flex;
+  border-radius: 25pt;
+  align-items: center;
+  justify-content: center;
+}
+
+.video h3 {
+  position: relative;
+  left: 140px;
+  top: auto;
+  font-size: 4rem;
+  color: #836e6e;
+  text-transform: uppercase;
+}
+
+/*Os styles do podcast*/
+.podcast {
+  background-color: #2b1dad8e;
+  width: 100%;
+  padding-bottom: 5rem;
+  color: rgba(59, 53, 53, 0.411);
+  display: flex;
+  border-radius: 25pt;
+  align-items: center;
+  justify-content: center;
+}
+
+.podcast h3 {
+  position: relative;
+  left: 100px;
+  bottom: auto;
+  font-size: 4rem;
+  color: #836e6e;
+  text-transform: uppercase;
+}
+
+/*Faixa que informa que o site tem todos os direitos reservados*/
+footer {
+  padding: 10px;
+  margin-top: 10px;
+  color:bisque;
+  background: #00395aa6;
+  text-align:center;
+  font-size: 14px;
+  border-bottom: #0f0f0f 4px solid;
+  
+}
